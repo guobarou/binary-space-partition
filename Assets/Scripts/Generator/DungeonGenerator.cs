@@ -14,13 +14,13 @@ public class DungeonGenerator : MonoBehaviour
     public Rect rect;
     public int minSize;
 
-    //public GameObject floorPrefab;
-    //public GameObject corridorPrefab;
-    //public GameObject numPrefab;
-    //public Transform canvas;
+    public GameObject floorPrefab;
+    public GameObject corridorPrefab;
+    public GameObject numPrefab;
+    public Transform canvas;
 
     ////临时代码
-    //public GameObject floorVirtualPrefab;
+    public GameObject floorVirtualPrefab;
     ////临时代码
 
     public Tilemap tilemapFloor;
@@ -49,7 +49,7 @@ public class DungeonGenerator : MonoBehaviour
         //for (int i = 0; i < tree.finalNodes.Count; i++)
         //{
         //    Rect rect = tree.finalNodes[i].room;
-        //    //PaintVisualier.PaintRect(rect, floorPrefab, transform);
+        //    PaintVisualier.PaintRect(rect, floorPrefab, transform);
         //    PaintVisualier.PaintRectNum(numPrefab, new Vector3(rect.x + rect.width / 2f - 0.5f, rect.y + rect.height / 2f - 0.5f, 0), canvas, i);//tree.finalNodes[i].index
         //}
 
@@ -82,7 +82,7 @@ public class DungeonGenerator : MonoBehaviour
         foreach (Rect rect in rects)
         {
             //PaintVisualier.PaintRect(rect, floorPrefab, transform);
-            HashSet<Vector2Int> tiles =  PaintVisualier.PaintRect(rect, tileBaseFloor, tilemapFloor);
+            HashSet<Vector2Int> tiles = PaintVisualier.PaintRect(rect, tileBaseFloor, tilemapFloor);
             floors.UnionWith(tiles);
         }
 
@@ -102,9 +102,9 @@ public class DungeonGenerator : MonoBehaviour
             }
             else if ((wall.Value & Wall.top) == Wall.top)
             {
-                tileBase = tileTopWall;                
+                tileBase = tileTopWall;
             }
-            else if((wall.Value & Wall.bottom) == Wall.bottom)
+            else if ((wall.Value & Wall.bottom) == Wall.bottom)
             {
                 tileBase = tileBottomWall;
             }
