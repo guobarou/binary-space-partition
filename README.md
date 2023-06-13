@@ -16,7 +16,7 @@
 通过完整得二叉树，逐级向上合并，等到更加合理得走廊。
 ![](https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/4.png)
 ## 第5步 围墙
-二进制运算得到合理得围墙角度。
+利用二进制存储围墙周围8方向信息，二进制运算得到合理得围墙角度。
 ![](https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/5.png)
 
 # All used with permission/license
