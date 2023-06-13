@@ -1,0 +1,9 @@
+
+# Ignore everything
+/*
+# Except these files
+!.gitignore
+!README.MD
+!Assets
+*.meta
+Assets/TextMesh Pro
