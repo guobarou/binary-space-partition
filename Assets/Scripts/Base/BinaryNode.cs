@@ -7,9 +7,9 @@ public class BinaryNode<T>
     public int index;
     public int level;
     
-    public T left, right;    
+    public T left, right;
 
-    public BinaryNode(int index, int level)
+    protected BinaryNode(int index, int level)
     {
         this.index = index;
         this.level = level;

@@ -17,17 +17,14 @@ public class CorridorGenerator
         for (int i = index ; i < length; i++)
         {
             int leftIndex = 2 * i + 1;
-            List<DungeonNode> leftList;
-            dicNodes.TryGetValue(leftIndex, out leftList);
+            dicNodes.TryGetValue(leftIndex, out var leftList);
 
             int rightIndex = 2 * i + 2;
-            List<DungeonNode> rightList;
-            dicNodes.TryGetValue(rightIndex, out rightList);
+            dicNodes.TryGetValue(rightIndex, out var rightList);
 
             if (leftList != null && rightList != null)
             {
-                DungeonNode leftNode, rightNode;
-                NearestNeighborSearch(leftList, rightList, out leftNode, out rightNode);
+                NearestNeighborSearch(leftList, rightList, out var leftNode, out var rightNode);
                 corridors.Add(CreatCorridor(leftNode, rightNode));
 
                 dicNodes[i] = leftList.Concat(rightList).ToList();
