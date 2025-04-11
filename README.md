@@ -1,7 +1,7 @@
 # 🏰 Binary Space Partitioning Dungeon Generator | Unity 2022 Implementation
 
 <p align="center">
-  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/end.png" width="90%" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Final Generation Result">
+  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/end.png" width="600" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Final Generation Result">
 </p>
 
 ## 📜 Technical Overview
@@ -16,7 +16,7 @@ This system implements a ​**Binary Space Partitioning (BSP)** algorithm to gen
 - ⏹️ Termination condition: subspace reaches preset room size threshold
 
 <p align="center">
-  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/1.png" width="90%" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Space Partitioning Diagram">
+  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/1.png" width="500" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Space Partitioning Diagram">
 </p>
 
 ### 2️⃣ Leaf Node Identification
@@ -25,7 +25,7 @@ This system implements a ​**Binary Space Partitioning (BSP)** algorithm to gen
 - 🚪 Leaf nodes correspond to final room units
 
 <p align="center">
-  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/2.png" width="90%" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Node Identification Diagram">
+  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/2.png" width="500" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Node Identification Diagram">
 </p>
 
 ### 3️⃣ Spatial Relationship Construction
@@ -34,7 +34,7 @@ This system implements a ​**Binary Space Partitioning (BSP)** algorithm to gen
 - 🔗 Establishes parent-child and sibling connections
 
 <p align="center">
-  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/3.png" width="90%" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Complete Tree Structure">
+  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/3.png" width="500" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Complete Tree Structure">
 </p>
 
 ### 4️⃣ Corridor Generation Algorithm
@@ -43,7 +43,7 @@ This system implements a ​**Binary Space Partitioning (BSP)** algorithm to gen
 - 📏 Dynamically adjusts corridor width parameters
 
 <p align="center">
-  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/4.png" width="90%" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Corridor Generation Result">
+  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/4.png" width="500" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Corridor Generation Result">
 </p>
 
 ### 5️⃣ Wall System
@@ -52,7 +52,7 @@ This system implements a ​**Binary Space Partitioning (BSP)** algorithm to gen
 - 📐 Automatic wall texture angle matching
 
 <p align="center">
-  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/5.png" width="90%" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Wall Generation Result">
+  <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/5.png" width="500" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="Wall Generation Result">
 </p>
 
 ## 📦 Asset Usage Declaration
