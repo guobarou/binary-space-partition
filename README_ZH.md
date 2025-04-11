@@ -1,3 +1,5 @@
+[![English](https://img.shields.io/badge/README-English-blue)](./README.md)
+[![中文](https://img.shields.io/badge/README-中文-red)](./README_ZH.md)
 # 🏰 二叉树空间分割地牢生成器 | Unity 2022 实现
 
 <img src="https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/end.png" width="600" style="border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="最终生成效果">
