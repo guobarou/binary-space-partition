@@ -1,52 +1,54 @@
-# Binary Space Partition Dungeon Generator 🌳🏰
+🏰 二叉树空间分割(BSP)地牢生成系统 | Unity 2022 实现
+https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/end.png
 
-A procedural 2D dungeon generator implemented in Unity 2022 using Binary Space Partitioning (BSP) algorithm.
+📜 技术概览
+本系统采用**二叉树空间分割(Binary Space Partitioning)**算法，在Unity 2022环境下实现了一套完整的2D随机地牢生成解决方案。算法通过递归空间划分和智能连接策略，生成具有高度可玩性的地牢布局。
 
-![Final Result](https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/end.png)
+🔍 核心算法流程
+1️⃣ 初始空间分割 (Space Partitioning)
+🧩 从矩形边界框(Bounding Box)开始初始化
+✂️ 采用递归二分法进行空间划分
+🎲 随机选择分割轴(水平/垂直)和分割位置
+⏹️ 终止条件：子空间达到预设房间尺寸阈值
+https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/1.png
 
-## ✨ Features
-- ​**BSP Algorithm**: Recursive space partitioning for natural dungeon layouts
-- ​**Customizable Parameters**: Control room sizes, corridor widths, and dungeon complexity
-- ​**Smart Wall Generation**: 8-directional wall detection with binary operations
-- ​**Visual Debugging**: Step-by-step visualization of the generation process
+2️⃣ 叶节点标记 (Leaf Node Identification)
+🌳 构建完整二叉树数据结构
+🔢 为每个叶节点分配唯一标识符
+🚪 叶节点对应最终生成的房间单元
+https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/2.png
 
-## 🏗️ Implementation Steps
+3️⃣ 空间关系构建 (Spatial Relationship)
+🏗️ 维护完整的树形结构拓扑关系
+📐 记录每个节点的空间边界信息
+🔗 建立父子节点和兄弟节点的连接关系
+https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/3.png
 
-### 1. Space Partitioning
-The algorithm starts with a rectangle representing the entire dungeon, then recursively splits it into sub-dungeons with random split positions until reaching desired room sizes.
+4️⃣ 走廊生成算法 (Corridor Generation)
+🛣️ 采用自底向上的遍历策略
+🤝 在相邻空间单元间建立最短路径连接
+📏 动态调整走廊宽度参数
+https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/4.png
 
-![Step 1](https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/1.png)
+5️⃣ 围墙系统 (Wall System)
+🧱 8邻域方向检测算法
+🔢 基于位掩码(Bitmask)的围墙计算
+📐 自动匹配不同角度的围墙贴图
+https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/5.png
 
-### 2. Room Numbering
-Generate room numbers based on binary node indices, where leaf nodes become the final rooms.
+📦 资源使用声明
+所有美术资源均获得合法授权：
+Dungeon Asset Pack by Pixel Poem
 
-![Step 2](https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/2.png)
+🛠️ 技术栈
+Unity 2022 | C# | BSP算法 | 程序化生成
 
-### 3. Complete Binary Tree
-While only leaf nodes become rooms, we maintain the complete binary tree structure for corridor generation.
+📅 版本信息
+v1.0 | 最后更新：2023年11月
 
-![Step 3](https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/3.png)
+👨💻 开发者
+guobarou
 
-### 4. Corridor Generation
-Merge nodes level by level to create natural connecting corridors between rooms.
+https://img.shields.io/github/stars/guobarou/Binary-Space-Partition-Dungeon-Generator?style=social
 
-![Step 4](https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/4.png)
-
-### 5. Wall Generation
-Using 8-directional binary detection to create properly angled walls around rooms and corridors.
-
-![Step 5](https://github.com/guobarou/Binary-Space-Partition-Dungeon-Generator/blob/main/Assets/Art/Images/5.png)
-
-## 🎮 How to Use
-1. Clone the repository
-2. Open in Unity 2022+
-3. Adjust parameters in the DungeonGenerator script
-4. Press Play to generate a new dungeon
-
-## 📜 License & Assets
-All game assets used with permission/license from:
-[Pixel Poem's Dungeon Asset Pack](https://pixel-poem.itch.io/dungeon-assetpuck)
-
----
-
-Made with ♥ by [Your Name] | [![GitHub](https://img.shields.io/github/followers/guobarou?style=social)](https://github.com/guobarou)
+💡 本系统适用于Roguelike、RPG等需要程序化地图生成的游戏项目
